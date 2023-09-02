@@ -3,8 +3,8 @@ import random
 
 def balance_dataset(root_dir):
     # 获取jump和none的图片路径列表
-    jump_images = [os.path.join(root_dir, 'jump', img_name) for img_name in os.listdir(os.path.join(root_dir, 'jump'))]
-    none_images = [os.path.join(root_dir, 'none', img_name) for img_name in os.listdir(os.path.join(root_dir, 'none'))]
+    jump_images = [os.path.join(root_dir, 'jump_temp', img_name) for img_name in os.listdir(os.path.join(root_dir, 'jump_temp'))]
+    none_images = [os.path.join(root_dir, 'none_temp', img_name) for img_name in os.listdir(os.path.join(root_dir, 'none_temp'))]
 
     # 计算需要删除的none图片数量
     num_to_delete = len(none_images) - len(jump_images)
