@@ -4,6 +4,8 @@ import pyautogui
 import time
 import joblib
 
+pyautogui.FAILSAFE = False
+
 # 加载模型
 model = joblib.load('dino_model.pth')
 
