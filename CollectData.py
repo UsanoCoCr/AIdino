@@ -19,6 +19,7 @@ while True:
     # 检查按键
     if keyboard.is_pressed('up arrow'):
         img.save(f"./pics/jump_temp/{int(time.time() * 1000)}.png")
+        time.sleep(0.2)
     else:
         img.save(f"./pics/none_temp/{int(time.time() * 1000)}.png")
-        time.sleep(0.2)  # 如果没有按键，则等待0.2秒
+        time.sleep(0.2)

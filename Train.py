@@ -19,7 +19,7 @@ for file in files:
 # 拆分数据集
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
-model = LogisticRegression(max_iter=1200, penalty='l2', solver='saga', tol=0.01)
+model = LogisticRegression(max_iter=1200, solver='saga', tol=0.01)
 
 model.fit(X_train, y_train)
 
